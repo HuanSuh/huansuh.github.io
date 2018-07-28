@@ -12,8 +12,8 @@ layout: default
         <h1>{{ page.title }}</h1>
         <p>
             {% for tag in page.tags %}
-                <a href="{{ site.baseurl }}/tags/{{ tag }}">{{ tag }}</a>
-                {% unless forloop.last %},{% endunless %}
+                <a href="{{ site.baseurl }}/tags/{{ tag }}">#{{ tag }}</a>
+                {% unless forloop.last %}&nbsp;{% endunless %}
             {% endfor %}
         </p>
         {% include cover_link.html cover=page.cover %}
@@ -25,15 +25,16 @@ layout: default
     <div id="post-footer">
         {% assign author = site.authors | where: 'name', page.author | first %}
         <a id="post-author" href="{{ author.url }}">
-            <div id="author-image" style="background-image:url({{ author.image | default: '' }});">
+            <div class="author-image" id="author-image"
+                 {% if author.image %}style="background-image:url({{ author.image }});"{% endif %}>
                 <span class="sr-only">{{ author.name }}'s profile image</span>
             </div>
             <p id="author-name">{{ author.name }}</p>
         </a>
         <p id="post-date">{{ page.date | date: '%Y-%m-%d %H:%M' }}</p>
-        <a id="post-more" href="{{ author.url }}">
+        <!-- <a id="post-more" href="{{ author.url }}">
             <span>Read more posts by this author</span>
-        </a>
+        </a> -->
     </div>
 </div>
 
@@ -44,7 +45,7 @@ layout: default
              {% if prev.image %}style="background-image: url({{ prev.image }});"{% endif %}>
             <div>
                 <h3><a href="{{ prev.url }}">{{ prev.title }}</a></h3>
-                <p>YOU MIGHT ENJOY</p>
+                <p>RECOMMENDED POST</p>
             </div>
         </div>
     {% endif %}

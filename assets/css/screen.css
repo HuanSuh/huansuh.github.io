@@ -18,7 +18,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Kakao', sans-serif;
+    font-family: sans-serif;
     font-weight: 400;
     color: #1e1e1e;
 }
@@ -193,14 +193,14 @@ for small screen(<720px):
 
 #logo {
     position: absolute;
-    top: 0;
+    top: 10px;
     left: 30px;
-    width: 123px;
-    height: 60px;
+    width: 71px;
+    height: 35px;
     margin: 0 0;
     padding: 0;
-    background: url(../images/pc/tech_logo.png) no-repeat center;
-    background-size: 123px 21px;
+    background: url(../images/pc/blog_logo.png) no-repeat center;
+    background-size: 71px 35px;
 }
 
 #menu {
@@ -254,12 +254,12 @@ for small screen(<720px):
     margin: 0;
     width: 115px; /* 115px = 160(width) - 15(padding-left) - 30(padding-right) */
     height: 33px;
-    border-radius: 17px;
+    border-radius: 3px;
     border: 1px solid #e6e6e6;
     padding: 0 30px 0 15px; /* 30px(right-padding) = 15(right-padding) + 10(icon-width) + 5(@@iolo) */
     font-size: 14px;
     color: #505050;
-    background: url(../images/pc/icon_search.png) no-repeat right;
+    background: url(../images/icon_search.png) no-repeat right;
     background-size: 13px 13px;
     background-position-x: 135px; /* 135px = 160 - 15(right-padding) + 10(icon-width) */
 }
@@ -301,7 +301,7 @@ for small screen(<720px):
 
 #wrapper {
     padding-bottom: 100px;
-    background-color: #f4f4f4;
+    background-color: #f3f3f3;
     overflow-x: scroll; /* @@iolo for very long title/tags */
 }
 
@@ -547,7 +547,7 @@ for small screen(<720px):
 #cover,
 #navbar,
 #footer {
-    font-family: 'Kakao', sans-serif !important;
+    font-family: sans-serif !important;
 }
 
 /* list(loop) */
@@ -676,8 +676,8 @@ a.tag:hover {
 }
 
 #pagination > li.active, #pagination > li:hover {
-    background-color: #e6e6e6;
-    border-radius: 4px;
+    background-color: #eeeeee;
+    border-radius: 14px;
 }
 
 #pagination > li > a {
@@ -1114,6 +1114,14 @@ body.author-template #cover p {
     background-size: cover;
 }
 
+#not-found {
+    margin: 50px;
+    width: 100%;
+    height: 187px;
+    background: url(../images/404.png) no-repeat center;
+    background-size: 254px 187px;
+}
+
 /* tag */
 
 body.tag-template {
@@ -1126,16 +1134,6 @@ body.page-template {
 
 }
 
-#forkme {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 149px;
-    height: 149px;
-    z-index: 998;
-    background: url(../images/forkme_kakao_tr.png) no-repeat;
-    margin-right: -45px;
-}
 
 #post-content.page {
     border-bottom: none;
@@ -1181,13 +1179,13 @@ body.page-template {
 
     #menu-toggle {
         left: 0;
-        background: url(../images/mo/icon_menu.png) no-repeat center;
+        background: url(../images/icon_menu.png) no-repeat center;
         background-size: 22px 22px;
     }
 
     #search-toggle {
         right: 0;
-        background: url(../images/mo/icon_search.png) no-repeat center;
+        background: url(../images/icon_search.png) no-repeat center;
         background-size: 22px 22px;
     }
 
@@ -1199,8 +1197,8 @@ body.page-template {
         top: 0;
         height: 50px;
         margin: 0 auto;
-        background-image: url(../images/mo/tech_logo.png);
-        background-size: 99px 17px;
+        background-image: url(../images/mo/blog_logo.png);
+        background-size: 45px 22px;
     }
 
     #menu {
@@ -1571,9 +1569,6 @@ body.page-template {
     body.page-template {
     }
 
-    #forkme {
-        margin-right: -20px;
-    }
 }
 
 /* responsive images - mobile(2x) */
@@ -1584,7 +1579,7 @@ body.page-template {
     }
 
     #logo {
-        background-image: url(../images/mo/tech_logo@2x.png);
+        background-image: url(../images/mo/blog_logo@2x.png);
     }
 
     #menu-toggle {
@@ -1664,6 +1659,14 @@ body.page-template {
     #cover-author-image {
         background-image: url(../images/mo/default_pic_l@3x.png);
     }
+
+    #not-found {
+        margin: 30px;
+        width: 100%;
+        height: 125px;
+        background: url(../images/mo/404@2x.png) no-repeat center;
+        background-size: 170px 125px;
+    }
 }
 
 /* responsive images - mobile(3x) */
@@ -1674,7 +1677,7 @@ body.page-template {
     }
 
     #logo {
-        background-image: url(../images/mo/tech_logo@3x.png);
+        background-image: url(../images/mo/blog_logo@3x.png);
     }
 
     #menu-toggle {
@@ -1753,5 +1756,13 @@ body.page-template {
 
     #cover-author-image {
         background-image: url(../images/mo/default_pic_l@3x.png);
+    }
+
+    #not-found {
+        margin: 50px;
+        width: 100%;
+        height: 187px;
+        background: url(../images/mo/404@3x.png) no-repeat center;
+        background-size: 254px 187px;
     }
 }

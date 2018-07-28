@@ -6,7 +6,7 @@
         <span class="sr-only">Toggle Search Form</span>
     </button>
     <a id="logo" href="/">
-        <span class="sr-only">KakaoTech</span>
+        <span class="sr-only">{{site.title}}</span>
     </a>
     <div id="search">
         <input id="search-input" type="search" placeholder="Search..." value="" />
@@ -14,10 +14,15 @@
     <ul class="search__results" id="results-container"></ul>
 
     <ul id="menu" class="nav">
-        <li class="{% if page.url != '/opensource/' and page.url != '/openapi/' and page.url != '/events/' %} active {% endif %}"><a href="{{ base_path }}/">블로그</a></li>
-        <li class="{% if page.url == '/opensource/' %} active {% endif %}"><a href="{{ base_path }}/opensource/">오픈소스</a></li>
-        <li class="{% if page.url == '/openapi/' %} active {% endif %}"><a href="{{ base_path }}/openapi/">오픈API</a></li>
-        <li class="{% if page.url == '/events/' %} active {% endif %}"><a href="{{ base_path }}/events/">기술행사</a></li>
+        <li><a href="{{ base_path }}/">Blog</a></li>
+        {% for menu in site.menu_list %}
+            {% if menu.title and menu.permalink %}
+                {% assign template = '/' | append: menu.permalink | append: '/' %}
+                    <li class="{% if page.url == template %} active {% endif %}">
+                      <a href="{{ base_path }}/{{menu.permalink}}/">{{menu.title}}</a>
+                    </li>
+            {% endif %}
+        {% endfor %}
     </ul>
 </div>
 <!-- Script pointing to jekyll-search.js -->
@@ -27,7 +32,7 @@
     SimpleJekyllSearch({
         searchInput: document.getElementById('search-input'),
         resultsContainer: document.getElementById('results-container'),
-        json: '{{ site.baseurl }}/search2.json',
+        json: '{{ site.baseurl }}/search.json',
         searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
         noResultsText: '<li>No results found</li>',
         limit: 15,
@@ -35,4 +40,3 @@
         exclude: ['Welcome']
     })
 </script><!-- #header -->
-

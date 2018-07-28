@@ -9,8 +9,8 @@ layout: default
 <div id="cover" class="container"
      {% if page.image %}style="background-image: url({{ page.image }});"{% endif %}>
     <div>
-        <h1>{{ page.title | default: page.name }}</h1>
-        <p>All Posts in <strong>{{ page.name }}</strong></p>
+        <h1>#{{ page.name }}</h1>
+        <p>{{ page.title | default: page.name }}</p>
     </div>
 </div>
 

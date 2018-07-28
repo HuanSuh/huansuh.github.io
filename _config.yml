@@ -1,37 +1,57 @@
-title: kakao 기술 블로그
-email: opensource@kakaocorp.com
-description: |
-  Connect Everything 새로운 연결, 새로운 세상.
-  연결의 혁신으로 세상은 더욱 가깝고 새로워진다고 카카오는 믿습니다.
-baseurl: ''
-url: 'http://tech.kakao.com'
-timezone: Asia/Seoul 
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-repository: kakao/kakao.github.io
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: BLOG TITLE
+email: email@email.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Blog description
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+timezone: Asia/Seoul
+encoding: UTF-8
 
 permalink: /:year/:month/:day/:title/
+asset_url: /assets
 
-excerpt_separator: <!--more-->
+facebook:
+  app_id:
+  username:
+github_url:
+  username:
+rss_enable: false
 
-markdown: kramdown
+main_title:
+main_url:
 
-krandown:
-  input: GFM
-  highlighter: rouge
+menu_list:    # Add menu
+  - menu:
+    title: About
+    permalink: about
 
-plugins:
-  - jekyll-paginate
-
-paginate: 5
-paginate_path: '/page/:num/'
+footer_list:    # Add footer menu
+  - menu:
+    title:
+    url:
 
 collections:
-  authors:
-    output: true
-    permalink: /authors/:path/
   tags:
     output: true
     permalink: /tags/:path/
+  authors:
+    output: true
+    permalink: /authors/:path/
 
 defaults:
   - scope:
@@ -45,24 +65,26 @@ defaults:
     values:
       layout: tag
 
-exclude: [README.md, Gemfile, Gemfile.lock]
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+
+paginate: 5
+paginate_path: '/page/:num/'
 
 keep_files: [assets, files]
-github: [metadata]
-# iolo's custom
-author: opensource@kakaocorp.com
-image: '/assets/images/default_blog_cover.jpg'
-asset_url: /assets
-#asset_url: //meta-kage.kakaocdn.net/dn/osa/blog/assets
-#asset_url: //t1.daumcdn.net/osa/blog/assets
-google_analytics:
-  ua: 'UA-72007721-1'
-facebook:
-  app_id: '1204347326263800'
-  username: nkakao
-twitter:
-  username: kakaodev
-google_plus:
-  username: kakaodev
-github_url:
-  username: kakao
+exclude: [README.md, Gemfile, Gemfile.lock]
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
