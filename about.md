@@ -18,7 +18,7 @@ permalink: /about/
 * [**Defind Inc.**](http://defind.kr)  CTO, Co-Founder / Mobile Application, Android, ComputerVision  / 2017.11 ~ 
 * **Samsung Electronics** Engineer / Web Front-end / 2014.07 ~ 2017.10
 * **Samsung Software Membership** Member / Android, Tizen, Cocos2d, Spring, AWS / 2013.01 ~ 2014.06
-* **Ajou Univ.** bachelor's degree / Computer Engineering, Electronic Engineering / 2017.03 ~ 2014.06
+* **Ajou Univ.** bachelor's degree / Computer Science, Electronic Engineering / 2007.03 ~ 2014.06
 
 
 
