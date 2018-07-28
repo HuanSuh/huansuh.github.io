@@ -13,12 +13,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: BLOG TITLE
-email: email@email.com
+title: Huan's blog
+email: huansuh@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Blog description
+  HuanSuh's Tech & Story
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "huansuh.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 timezone: Asia/Seoul
 encoding: UTF-8
 
@@ -27,23 +27,26 @@ asset_url: /assets
 
 facebook:
   app_id:
-  username:
+  username: huansuh.18
 github_url:
-  username:
+  username: huansuh
 rss_enable: false
 
-main_title:
-main_url:
+main_title: Huansuh
+main_url: /
 
 menu_list:    # Add menu
+  # - menu:
+  #   title: OpenSource
+  #   permalink: open-source
   - menu:
     title: About
     permalink: about
 
 footer_list:    # Add footer menu
   - menu:
-    title:
-    url:
+    title: Huansuh
+    url: /
 
 collections:
   tags:

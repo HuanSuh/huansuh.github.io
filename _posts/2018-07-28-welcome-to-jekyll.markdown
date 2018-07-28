@@ -3,8 +3,8 @@ layout: post
 title: "Welcome to Jekyll!" 
 date: 2018-07-28 10:40:37 +0900
 categories: jekyll update
-author: author_name
-tags: [hello, hola]
+author: huansuh
+tags: [hello]
 ---
 
 categories: jekyll update
