@@ -193,14 +193,14 @@ for small screen(<720px):
 
 #logo {
     position: absolute;
-    top: 10px;
+    top: 5px;
     left: 30px;
-    width: 71px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
     margin: 0 0;
     padding: 0;
     background: url(../images/pc/blog_logo.png) no-repeat center;
-    background-size: 71px 35px;
+    background-size: 50px 50px;
 }
 
 #menu {
@@ -1198,7 +1198,7 @@ body.page-template {
         height: 50px;
         margin: 0 auto;
         background-image: url(../images/mo/blog_logo.png);
-        background-size: 45px 22px;
+        background-size: 35px 35px;
     }
 
     #menu {
