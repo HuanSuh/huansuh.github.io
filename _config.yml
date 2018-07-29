@@ -25,13 +25,22 @@ encoding: UTF-8
 permalink: /:year/:month/:day/:title/
 asset_url: /assets
 
+## (Start)Features
+# Social services
 facebook:
   app_id:
   username: huansuh.18
-  comment_enabled: true
 github:
   username: huansuh
 rss_enable: true
+
+# Facebook comment plugin
+comment_enabled: true
+
+# Google Analytics
+ga_ua: 'UA-123002104-1'
+
+## (End)Features
 
 main_title: Huansuh
 main_url: /

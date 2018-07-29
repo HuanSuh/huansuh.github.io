@@ -38,6 +38,7 @@
  - image: http://... # 커버이미지 url(선택)
  - date: `YYYY-MM-DD HH:MM:SS` # 발행일(필수)
 
+### Author 등록
 
 ### Author 등록
 
@@ -95,6 +96,8 @@ image: #optional (or [/files/covers/tag_name.jpg])
 
 
 ---
+
+
 
 
 
@@ -164,54 +167,3 @@ image: #optional (or [/files/covers/tag_name.jpg])
      </ul>
      ```
 
-
-
-### Footer
-
-* #### Footer menu 등록
-
-  
-
-* #### Social services
-
-  [`_config.yml`](./_config.yml) 에서 개별 social service의 username 항목에 link되는 계정 id 입력 시 footer에 해당 링크 icon 추가됨
-
-  ```yaml
-  facebook:
-    app_id:
-    username:
-    comment_enabled: true
-  github:
-    username:
-  ```
-
-  - 현재 facebook, GitHub 등록 가능, 추후 다른 social service 추가 예정
-
-
-
-#### Facebook comment
-
-[`_config.yml`](./_config.yml)  에서 facebook.comment_enabled 항목 `true`로 설정
-
-```yaml
-facebook:
-  app_id:
-  username:
-  comment_enabled: true
-```
-
-![readme_fbcomment](/files/readme/readme_fbcomment.png)
-
-
-
-
-
-
-
-
-
-## License
-
-This software is licensed under the [Apache 2 license](LICENSE.txt), quoted below. 
-
-Licensed under the Apache License, Version 2.0 (the "License"); you may not use this project except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0. Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
