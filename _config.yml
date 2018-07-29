@@ -37,6 +37,8 @@ rss_enable: false
 # Facebook comment plugin
 comment_enabled: true
 
+# Google Analytics
+ga_ua:
 
 ## (End)Features
 
