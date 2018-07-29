@@ -2,5 +2,6 @@
 _site
 .sass-cache
 .jekyll-metadata
-
 .ruby-version
+
+_authors/author_name.md
