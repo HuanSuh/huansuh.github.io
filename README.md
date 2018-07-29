@@ -180,7 +180,6 @@ image: #optional (or [/files/covers/tag_name.jpg])
   facebook:
     app_id:
     username:
-    comment_enabled: true
   github:
     username:
   ```
@@ -191,13 +190,11 @@ image: #optional (or [/files/covers/tag_name.jpg])
 
 #### Facebook comment
 
-[`_config.yml`](./_config.yml)  에서 facebook.comment_enabled 항목 `true`로 설정
+[`_config.yml`](./_config.yml)  에서 comment_enabled 항목 `true`로 설정
 
 ```yaml
-facebook:
-  app_id:
-  username:
-  comment_enabled: true
+# Facebook comment plugin
+comment_enabled: true
 ```
 
 ![readme_fbcomment](/files/readme/readme_fbcomment.png)
