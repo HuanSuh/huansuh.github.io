@@ -28,9 +28,10 @@ asset_url: /assets
 facebook:
   app_id:
   username: huansuh.18
-github_url:
+  comment_enabled: true
+github:
   username: huansuh
-rss_enable: false
+rss_enable: true
 
 main_title: Huansuh
 main_url: /
