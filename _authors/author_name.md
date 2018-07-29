@@ -1,8 +1,10 @@
 ---
 name: author_name
-title: 		#optional
-email: 		#optional
-image: 		#optional (or [/files/authors/author_name.jpg])
-facebook_id:	#optional
-github_id: huansuh	#optional
+title: 		     
+image: 		     #optional (or [/files/authors/author_name.jpg])
+cover: 		     #optional (or [/files/authors/author_name_cover.jpg])
+email: 		     #optional
+facebook_id:	 #optional
+github_id:     #optional
 ---
+

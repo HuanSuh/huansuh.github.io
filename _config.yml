@@ -29,7 +29,7 @@ facebook:
   app_id:
   username:
   comment_enabled: true
-github_url:
+github:
   username:
 rss_enable: false
 
