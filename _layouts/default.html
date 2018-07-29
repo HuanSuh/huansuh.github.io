@@ -4,6 +4,8 @@
     {% include head.html %}
 </head>
 <body class="{{ page.layout | append: '-template' }}">
+<!-- Facebook comment plugin -->
+<div id="fb-root"></div>
 
 {% include header.html %}
 
@@ -20,6 +22,7 @@
 <script src="{{ site.asset_url }}/lib/jquery-1.12.0.min.js"></script>
 <script src="{{ site.asset_url }}/lib/jquery.magnific-popup.min.js"></script>
 <script src="{{ site.asset_url }}/js/index.js"></script>
+<script src="{{ site.asset_url }}/js/facebook_comment.js"></script>
 
 </body>
 </html>

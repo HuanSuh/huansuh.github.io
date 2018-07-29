@@ -1,0 +1,6 @@
+{% if site.facebook.comment_enabled %}
+<div class="fb-comments container"
+     data-href={{ site.url | append: page.url }}
+     width="100%"
+     data-numposts="5" ></div>
+{% endif %}

@@ -28,6 +28,7 @@ asset_url: /assets
 facebook:
   app_id:
   username:
+  comment_enabled: true
 github_url:
   username:
 rss_enable: false
