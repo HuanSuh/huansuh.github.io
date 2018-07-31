@@ -7,6 +7,5 @@ author: "author_name"
 tags: ["tags1", "tags2..."]
 ---
 
-## categories: jekyll update
 
 

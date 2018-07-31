@@ -1,6 +1,6 @@
 ---
-name: author_name
-title: 		     
+name: 		# author_name
+title: 		# author_title     
 image: 		# optional (or [/files/authors/author_name.jpg])
 cover: 		# optional (or [/files/authors/author_name_cover.jpg])
 email: 		# optional
