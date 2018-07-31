@@ -38,6 +38,9 @@ rss_enable: true
 # Facebook comment plugin
 comment_enabled: true
 
+# Category menu
+category_enabled: true
+
 # Google Analytics
 ga_ua: 'UA-123002104-1'
 
@@ -66,6 +69,9 @@ collections:
   authors:
     output: true
     permalink: /authors/:path/
+  categories:
+    output: true
+    permalink: /categories/:path/
 
 defaults:
   - scope:
@@ -78,6 +84,11 @@ defaults:
       type: tags
     values:
       layout: tag
+  - scope:
+      path: ''
+      type: categories
+    values:
+      layout: category
 
 # Build settings
 markdown: kramdown

@@ -35,10 +35,12 @@
    * 처음 글을 쓰는 필자이라면 **Author 등록**(필수)
  - tags: `[tag1,tag2,tag3,...]` # 태그 목록(선택). 왠만하면 특수문자없이 영소문자,숫자,-(하이픈),.(점)...만 사용.
     - 유력한(?) 태그가 새로 등장했다면 **Tag 등록**(선택)
+- category: # 카테고리 목록(선택)
+    - 카테고리가 무분별하게 늘어나지 않도록 유의하여 **Category 등록**(선택)
  - image: http://... # 커버이미지 url(선택)
  - date: `YYYY-MM-DD HH:MM:SS` # 발행일(필수)
 
-### Author 등록
+
 
 ### Author 등록
 
@@ -90,6 +92,27 @@ image: #optional (or [/files/covers/tag_name.jpg])
 ```
 
 
+
+### Category 등록
+
+1. `_category` 디렉토리에 `category-name.md` 이름으로 필자 정보 파일 추가
+2. 파일 상단에 [front matter] 작성
+
+- layout: category # 레이아웃(필수)
+- name: `category-name` # 왠만하면 특수문자없이 영소문자,숫자,-(하이픈),.(점)...만 사용.
+  - post 작성 시 본 name 항목을 frontmatter의 category에 작성한다.
+- title: ... # 좀 더 길고 구체적인 설명(필수)
+- image: http://... # 태그 이미지(선택)
+
+1. 내용은 필요없음
+
+```
+---
+name: dev
+title: posts about development
+image: #optional (or [/files/covers/category_name.jpg])
+---
+```
 
 
 
@@ -167,3 +190,41 @@ image: #optional (or [/files/covers/tag_name.jpg])
      </ul>
      ```
 
+
+
+### Footer
+
+- #### Footer menu 등록
+
+- #### Social services
+
+  [`_config.yml`](https://github.com/HuanSuh/huansuh.github.io/blob/ab65270e3cb01632926d995007f11031f367a8b0/_config.yml) 에서 개별 social service의 username 항목에 link되는 계정 id 입력 시 footer에 해당 링크 icon 추가됨
+
+  ```
+  facebook:
+    app_id:
+    username:
+  github:
+    username:
+  ```
+
+  - 현재 facebook, GitHub 등록 가능, 추후 다른 social service 추가 예정
+
+#### Facebook comment
+
+[`_config.yml`](https://github.com/HuanSuh/huansuh.github.io/blob/ab65270e3cb01632926d995007f11031f367a8b0/_config.yml) 에서 comment_enabled 항목 `true`로 설정
+
+```
+# Facebook comment plugin
+comment_enabled: true
+```
+
+[![readme_fbcomment](https://github.com/HuanSuh/huansuh.github.io/raw/ab65270e3cb01632926d995007f11031f367a8b0/files/readme/readme_fbcomment.png)](https://github.com/HuanSuh/huansuh.github.io/blob/ab65270e3cb01632926d995007f11031f367a8b0/files/readme/readme_fbcomment.png)
+
+
+
+## License
+
+This software is licensed under the [Apache 2 license](https://github.com/HuanSuh/huansuh.github.io/blob/ab65270e3cb01632926d995007f11031f367a8b0/LICENSE.txt), quoted below.
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this project except in compliance with the License. You may obtain a copy of the License at <http://www.apache.org/licenses/LICENSE-2.0>. Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.

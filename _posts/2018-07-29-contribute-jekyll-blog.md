@@ -2,7 +2,7 @@
 layout: post 
 title: "Jekyll & Github Pages 를 이용한 Blog 만들기" 
 date: 2018-07-29 15:00:00 +0900
-categories: 
+category: dev
 author: "huansuh"
 tags: ["jekyll", "blog"]
 ---
@@ -62,7 +62,7 @@ base project를 fork 하여 생성하고 기본 틀만 남기고 다 삭제!!!
   * LinkedIn
   * ...
 * Share
-* Category
+* ~~Category~~
 * sitemap
 
 그 외 기능들은 여기에 작성하면서 지속적으로 관리할 것이다.
