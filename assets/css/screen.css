@@ -138,7 +138,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 for large screen(>=720px):
 
 +#header----------------------------------------+
-|#logo              #menu                #search|
+|#logo         #menu(#category)          #search|
 +-----------------------------------------------+
 |                                               |
 +#wrapper---------------------------------------+
@@ -161,6 +161,7 @@ for small screen(<720px):
 |#menu-toggle      #logo          #search-toggle|
 +-----------------------------------------------+
 |                  #menu                        |
+|               (#category)                     |
 +-----------------------------------------------+
 |                 #search                       |
 +-----------------------------------------------+
@@ -237,6 +238,38 @@ for small screen(<720px):
 #menu > li.active > a,
 #menu > li:hover > a {
     color: #1e1e1e;
+}
+
+#menu > li.menu-category {
+  display: none;
+}
+
+div.menu_dropdown_items {
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 999;
+}
+div.menu_dropdown_items:active,
+div.menu_dropdown_items:hover {
+  display: block;
+}
+#menu > li:active> div.menu_dropdown_items,
+#menu > li:hover > div.menu_dropdown_items {
+    display: block;
+}
+
+.menu_dropdown_items a {
+    color: black;
+    padding: 12px 16px, 0px, 0px;
+    margin-bottom: 2px;
+    text-decoration: none;
+    display: block;
+}
+.menu_dropdown_items a:hover {
+  background-color: #ddd;
 }
 
 #search {
@@ -764,6 +797,10 @@ body.tag-template #cover {
     background-image: url(../images/default_tag_cover.jpg);
 }
 
+body.category-template #cover {
+    background-image: url(../images/default_tag_cover.jpg);
+}
+
 body.home-template #cover p,
 body.archive-template #cover p,
 body.page-template #cover p {
@@ -823,13 +860,15 @@ body.tag-template #cover > * {
 */
 body.post-template #cover h1,
 body.author-template #cover h1,
-body.tag-template #cover h1 {
+body.tag-template #cover h1,
+body.category-template #cover h1  {
     white-space: normal;
 }
 
 body.post-template #navbar,
 body.author-template #navbar,
-body.tag-template #navbar {
+body.tag-template #navbar,
+body.category-template #navbar {
     padding-top: 40px; /* 70px(height) = 40(padding-top) + 20(share icon height) + 10(padding-bottom) */
     padding-bottom: 10px;
 }
@@ -1128,6 +1167,12 @@ body.tag-template {
 
 }
 
+/* category */
+
+body.category-template {
+
+}
+
 /* page */
 
 body.page-template {
@@ -1225,6 +1270,18 @@ body.page-template {
 
     #menu > li > a {
         display: block;
+    }
+
+    #menu > li.menu-category {
+      display: block;
+    }
+
+    div.menu_dropdown_items {
+        display: none;
+    }
+    #menu > li:active> div.menu_dropdown_items,
+    #menu > li:hover > div.menu_dropdown_items {
+        display: none;
     }
 
     #search {
@@ -1471,7 +1528,8 @@ body.page-template {
 
     body.post-template #navbar,
     body.author-template #navbar,
-    body.tag-template #navbar {
+    body.tag-template #navbar,
+    body.category-template #navbar {
         padding-top: 23px; /* 60px(height) = ?(padding-top) + 22(share icon height) + 15(padding-bottom) */
         padding-bottom: 15px;
     }
@@ -1563,6 +1621,9 @@ body.page-template {
 
     /* tag */
     body.tag-template {
+    }
+    /* category */
+    body.category-template {
     }
 
     /* page */

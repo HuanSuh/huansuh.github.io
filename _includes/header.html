@@ -14,7 +14,29 @@
     <ul class="search__results" id="results-container"></ul>
 
     <ul id="menu" class="nav">
-        <li><a href="{{ base_path }}/">Blog</a></li>
+        <li class="{% if site.category_enabled %} menu_dropdown {% endif %}"><a href="{{ base_path }}/">Blog</a>
+          <!-- category menu for wide display -->
+          {% if site.category_enabled %}
+            <div class="menu_dropdown_items">
+              {% for category in site.categories %}
+                  {% if category.name and category.title %}
+                      <a href="{{ base_path }}/categories/{{category.name}}/">- {{category.name}}</a>
+                  {% endif %}
+              {% endfor %}
+            </div>
+          {% endif %}
+        </li>
+        <!-- category menu for mobile -->
+        {% if site.category_enabled %}
+          {% for category in site.categories %}
+              {% if category.name and category.title %}
+                  {% assign template = '/categories' | append: category.name %}
+                      <li class="menu-category {% if page.url == template %} active {% endif %}">
+                        <a href="{{ base_path }}/categories/{{category.name}}/">ㄴ {{category.name}}</a>
+                      </li>
+              {% endif %}
+          {% endfor %}
+        {% endif %}
         {% for menu in site.menu_list %}
             {% if menu.title and menu.permalink %}
                 {% assign template = '/' | append: menu.permalink | append: '/' %}

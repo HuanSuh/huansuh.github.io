@@ -1,0 +1,6 @@
+<h4>Category</h4>
+<ul>
+  {% for category in site.categories %}
+    <li><a href="{{ site.baseurl }}/categories/{{ category.name }}">{{ category.name }}</a></li>
+  {% endfor %}
+</ul>
