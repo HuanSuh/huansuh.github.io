@@ -34,7 +34,7 @@ Github pages로 만들어 보고 싶었던 이유는
 
 [base Branch](https://github.com/HuanSuh/huansuh.github.io){:target="_blank"}에서 공통 속성을 작업하고
 
- - 개인 블로그 : [Huan's blog](/)
+ - 개인 블로그 : [Huan's Tech & Story](/)
 - 사내 블로그 : ~~디파인드 블로그(https://defind.github.io)~~{:target="_blank"}
 
 등등으로 개별 속성을 작업하면 좋을 것 같아서 Github pages로 시작해보았다.
@@ -63,6 +63,7 @@ base project를 fork 하여 생성하고 기본 틀만 남기고 다 삭제!!!
   * ...
 * Share
 * Category
+* sitemap
 
 그 외 기능들은 여기에 작성하면서 지속적으로 관리할 것이다.
 
