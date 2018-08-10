@@ -62,8 +62,9 @@ base project를 fork 하여 생성하고 기본 틀만 남기고 다 삭제!!!
   * LinkedIn
   * ...
 * Share
+  * ~~Facebook~~
 * ~~Category~~
-* sitemap
+* ~~sitemap~~
 
 그 외 기능들은 여기에 작성하면서 지속적으로 관리할 것이다.
 
