@@ -100,12 +100,47 @@ swift, object-c 경험이 부족하기 때문에 Syntax나 문법 관련되어 l
 
    - pull request : GitHub 에서 Pull Request 작성
 
+     ​	1. Pull Request를 생성한다.
+
+   ![github_create_pr](/files/github_create_pr.png){:width="100%"}
+
+   ​		2. PR Title과 comment(optional)을 입력 후, `Create pull request` 버튼을 클릭한다.
+
+   ![github_open_pr](/files/github_open_pr.png){:width="100%"}
+
    <br>
 
-5. **review & merge**
+5. **review & merge**   `reviewer`
 
    * review : PR 리뷰 수행 및 개선작업
-   * merge : Squash and merge를 통해 한 브랜치의 변경 이력을 최신 커밋 하나로 합쳐서 merge할 수 있다.<br>(commit history가 깔끔해 질 수 있음)
+
+     1. PR 목록에서 변경사항을 확인한다.
+
+     2. 변경 사항에 inline comment를 작성할 수 있다.
+
+        ![github_add_review_comment](/files/github_add_review_comment.png){:width="100%"}
+
+     3. Review 변경사항을 저장한다.
+
+        ![github_review_change](/files/github_review_change.png)
+
+        - Comment : 추가적인 comment를 작성할 경우
+        - Approve : master branch에 merge할 수 있는 경우
+        - Request change : 수정 필요사항이 있을 경우 <br>(`committer`는 해당 요청사항에 따라 코드를 수정하여 3~4과정을 수행한다.)
+
+        
+
+   * merge : 변경사항을 master branch로 merge한다.
+
+   * Squash and merge를 통해 한 브랜치의 변경 이력을 최신 커밋 하나로 합쳐서 merge할 수 있다.<br>(commit history가 깔끔해 질 수 있음)
+
+     ![github_merge](/files/github_merge.png){:width="100%"}
+
+     * Create a merge commit : 개별 커밋 내역을 적용한 merge commit을 생성하여 merge한다.
+     * Squash and merge : 한 브랜치의 변경 이력을 최신 커밋 하나로 합쳐서 merge할 수 있다.<br>(commit history가 깔끔해 질 수 있음)
+     * Rebase and merge : rebase 이후 merge한다.
+
+     
 
    <br>
 
@@ -129,7 +164,7 @@ swift, object-c 경험이 부족하기 때문에 Syntax나 문법 관련되어 l
 
    
 
-   * 이후 신규 작업은 2~7의 과정을 통해 진행한다.
+   * 이후 신규 작업은 2~7과정을 통해 진행한다.
 
 
 
