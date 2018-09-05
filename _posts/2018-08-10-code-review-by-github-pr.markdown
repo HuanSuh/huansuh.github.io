@@ -122,7 +122,7 @@ swift, object-c 경험이 부족하기 때문에 Syntax나 문법 관련되어 l
 
      3. Review 변경사항을 저장한다.
 
-        ![github_review_change](/files/github_review_change.png)
+        ![github_review_change](/files/github_review_change.png){:width="100%"}
 
         - Comment : 추가적인 comment를 작성할 경우
         - Approve : master branch에 merge할 수 있는 경우
