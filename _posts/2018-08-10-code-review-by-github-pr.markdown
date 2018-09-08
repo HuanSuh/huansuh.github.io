@@ -2,7 +2,7 @@
 layout: post 
 title: "GitHub PullRequest를 통해 Code Review하기" 
 date: 2018-08-10 20:00:00 +0900
-categories: dev
+category: dev
 author: "huansuh"
 tags: ["code_review", "github"]
 ---
