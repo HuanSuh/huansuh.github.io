@@ -246,6 +246,7 @@ for small screen(<720px):
 
 div.menu_dropdown_items {
     display: none;
+    text-align: left;
     position: absolute;
     min-width: 100px;
     background-color: #f1f1f1;
@@ -263,7 +264,7 @@ div.menu_dropdown_items:hover {
 
 .menu_dropdown_items a {
     color: black;
-    padding: 12px 16px, 0px, 0px;
+    padding: 0px 15px;
     margin-bottom: 2px;
     text-decoration: none;
     display: block;
