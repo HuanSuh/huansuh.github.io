@@ -72,10 +72,6 @@ swift, object-c 경험이 부족하기 때문에 Syntax나 문법 관련되어 l
 
    ![trello_cardnumber](/files/trello_cardnumber.png)
 
-   
-
-   
-
 3. **add / commit**
 
    - 코드 작성 후 작업한 내용을 commit한다.
@@ -128,8 +124,6 @@ swift, object-c 경험이 부족하기 때문에 Syntax나 문법 관련되어 l
         - Approve : master branch에 merge할 수 있는 경우
         - Request change : 수정 필요사항이 있을 경우 <br>(`committer`는 해당 요청사항에 따라 코드를 수정하여 3~4과정을 수행한다.)
 
-        
-
    * merge : 변경사항을 master branch로 merge한다.
 
    * Squash and merge를 통해 한 브랜치의 변경 이력을 최신 커밋 하나로 합쳐서 merge할 수 있다.<br>(commit history가 깔끔해 질 수 있음)
@@ -140,7 +134,6 @@ swift, object-c 경험이 부족하기 때문에 Syntax나 문법 관련되어 l
      * Squash and merge : 한 브랜치의 변경 이력을 최신 커밋 하나로 합쳐서 merge할 수 있다.<br>(commit history가 깔끔해 질 수 있음)
      * Rebase and merge : rebase 이후 merge한다.
 
-     
 
    <br>
 
@@ -170,4 +163,4 @@ swift, object-c 경험이 부족하기 때문에 Syntax나 문법 관련되어 l
 
 
 
-<br>참고 : [Youtube - YongWoo Jeon님의 github에서 브랜치를 만들고 PR보내는 방법](https://youtu.be/_giqGNzR1Nc)
+<br>참고 : [Youtube - YongWoo Jeon님의 github에서 브랜치를 만들고 PR보내는 방법](https://youtu.be/_giqGNzR1Nc){:target="_blank"}
