@@ -30,7 +30,7 @@ permalink: /about/
 
   ​	[![android.ea263431](/files/android.ea263431.png)](https://play.google.com/store/apps/details?id=kr.defind.shoepik.users){:target="_blank"} ![ios.492d1f3c](/files/ios.492d1f3c.png)
 
-* [**Realsize**](https://realsize.io){:target="_blank"} : Size recommendation plug-in service for e-cormmerce mall
+* [**Realsize**](https://realsize.io){:target="_blank"} : Size recommendation plug-in service for e-commerce mall
 
   * @Defind / Web Front-end
 
