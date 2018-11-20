@@ -12,7 +12,7 @@ tags: ["beerstory"]
 
 진정한 맥덕이 되기 위해 시작한 맥주 시음노트 작성 프로젝트!!<br/>33 Bottles of Beer라는 시음 노트를 구매해서 작성을 시작했다.
 
-![33 Bottles of Beer로 작성한 Asahi 시음노트](/files/bs_note.png){:width="60%"}
+![33 Bottles of Beer로 작성한 Asahi 시음노트](/files/bs_note.png){width:"30%"}
 
 
 
@@ -34,15 +34,15 @@ tags: ["beerstory"]
 
 만들다 보니 욕심이 생겨서 아이콘도 만들고 <br/>(Beer의 b 와 스토리(story)의 말풍선을 모티브로 만듬)
 
-![BeerStory icon](/files/ic_bs_fav_256.png){:width="50%"}
-
-![BeerStory logo](/files/bs_logo.jpg){:width="100%"}
+<img src='/files/ic_bs_fav_256.png' width="150" />    <img src='/files/bs_logo.jpg' width="150" />
 
 
 
 만들고 나서 욕심생겨서 도메인도 구매했지…ㅋㅋ<br/><b>[http://beerstory.io](http://beerstory.io){:target="_blank"}</b>
 
-![BeerStory Feed화면](/files/bs_screenshot.png){:width="50%"}
+<img src='/files/bs_screenshot.png' width="300"/>
+
+
 
 
 
